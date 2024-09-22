@@ -1,0 +1,17 @@
+- VS Code
+shift alt F - auto formatação
+ctrl / - comenta as linhas
+HTML5 (para trazer os comandos iniciais)
+
+Breakpoints Comuns
+Mobile: até 767px.
+Tablet: de 768 a 1024px.
+Desktop: 1025 ou mais.
+
+Orientação de tela: portrait (retrato) ou landscape (paisagem)
+
+Media Features, mais usados:
+- width, height, orientation, resolution.
+
+Operadores lógicos, para Media:
+and, not, ','(vírgula) (equivale a "OU")

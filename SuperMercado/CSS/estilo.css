@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(255, 161,107);
+}
+.navbar-brand img{
+    width: 15vw;
+    zoom: 1.2;
+    border-width: 6px;
+    border-radius: 33px;
+    border-color: rgb(243, 169, 9);
+    border-style: solid;
+    display: inline-block
+}
+main section img{
+    width: 90vw;
+}
+main section {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Produto{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border: solid 1px #44444459;
+    border-radius: 0px 0px 12px 12px;
+    margin: 1.5rem;
+}
+.Produto img{
+    width: 45vw;
+}
+.Produto h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.Produto h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.Produto h5{
+    text-decoration: line-through;
+}
+.Produto h1{
+    font-weight: 800;
+}
+.Produto button{
+    border: none;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #1c53b1;
+    color: #fff;
+    font-size: 22px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Produto button svg{
+    margin-right: 1rem;
+}
+h1{
+    text-align: center;
+}
+footer a img{
+    width: 22vw;
+    border-width: 6px;
+    border-radius: 33px;
+    border-color: rgb(243, 169, 9);
+    border-style: solid;
+    display: inline-block
+}
+
+@media(min-width:768px){
+    .navbar-brand img{
+        width: 8vw;
+        zoom: 1.2;
+        border-width: 6px;
+        border-radius: 33px;
+        border-color: rgb(243, 169, 9);
+        border-style: solid;
+        display: inline-block
+    }
+    main section{
+        display: flex;
+        flex-direction: row;
+    }
+    main section img{
+        width: 40%;
+
+    }
+    main section article{
+        width: 60%;
+        margin-left: 2rem;
+        text-align: justify;
+    }
+    .Produto{
+        width: 20%;
+    }
+    .Produto img{
+        width: 18vw;
+    }
+    footer a img{
+        width: 10vw;
+        border-width: 6px;
+        border-radius: 33px;
+        border-color: rgb(243, 169, 9);
+        border-style: solid;
+        display: inline-block
+    }
+}
