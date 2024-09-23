@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d9d9d9;
+    font-family: Arial, Helvetica, sans-serif;
+}    
+header{
+    height: 110px;
+    width: 100vw;
+    background-color: #434343;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 118px;
+    height: 106px;
+    margin-top: 3px;
+}
+header svg{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+main{
+    padding: 0px 30px 0px 30px;
+}
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#carrinho{
+    background-color: #1e75f9;
+    padding: 8px;
+    border-radius: 50%;
+}
+.titulo h1{
+    font-size: 26px;
+    color: #395786;
+}
+.titulo h2{
+    font-size: 20px;
+}
+.produto article{
+    border: solid 4px #1e75f9;
+}
