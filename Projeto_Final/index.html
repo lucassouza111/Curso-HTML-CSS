@@ -1,12 +1,242 @@
+<!-- => TRABALHO FINAL => DESENVOLVIMENTO DE UM SITE DE SUA ESCOLHA (TEMA LIVRE).
+
+- HOME, SOBRE NÓS, PRODUTOS OU SERVIÇOS (MIN 12), PARCERIAS, CONTATO.
+- CAROUSEL, FORMULÁRIO DE CADASTRO, FORMULÁRIO DE LOGIN, INTEGRAÇÃO MAPS.
+- ENTREGA NA ÚLTIMA AULA VIA LINK DO REPOSITÓRIO DO GITHUB.
+- BREVE APRESENTAÇÃO DO PROJETO. -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Final</title>
-    <link rel="stylesheet" href="./CSS/estilo.css">
+	<meta charset="UTF-8" />
+	<Title>Projeto Final</Title>
+	<link rel="stylesheet" href="_css/estilo.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+<!-- <script language="javascript" src="_javascript/funcoes.js"></script> -->
+
 <body>
-    
+	<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1>PetFriends</h1>
+				<h2>Seu próximo pet está aqui!</h2>
+			</hgroup>
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul type="disc">
+					<li><a href="#" target="_self">HOME</a></li>
+					<li><a href="#" target="_self">SOBRE NÓS</a></li>
+					<li><a href="#" target="_self">SERVIÇOS</a></li>
+					<li><a href="#" target="_self">PARCERIAS</a></li>
+					<li><a href="./fale-conosco.html" target="_self">CONTATO</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="carousel">
+			<!-- carrossel 4 imgs -->
+			<div id="carouselExample" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./_imagens/Carousel_04.jpg" class="d-block w-100" alt="carrosselImagem 1">
+					</div>
+					<div class="carousel-item">
+						<img src="./_imagens/Carousel_02.jpg" class="d-block w-100" alt="carrosselImagem 2">
+					</div>
+					<div class="carousel-item">
+						<img src="./_imagens/Carousel_03.jpg" class="d-block w-100" alt="carrosselImagem 3">
+					</div>
+					<div class="carousel-item">
+						<img src="./_imagens/Carousel_01.jpg" class="d-block w-100" alt="carrosselImagem 4">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<section>
+			<img src="./imagens/Quem_Somos.png" alt="">
+			<article>
+				<h1>Quem Somos</h1>
+				<p>Somos uma verdadeira instituição propulsora da ligação homem e animal porque acreditamos que a preservação da nossa própria espécie depende de como lidamos com os outros seres que habitam o planeta.</p>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+					  <h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							Nossa Divulgação
+						</button>
+					  </h2>
+					  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Em nossos veículos de propagação das mensagens o programa de tv é uma das vertentes que, muitas vezes, é tratada como o carro chefe. Mas na verdade cada um de nossos canais formam um todo coeso cuja informação chega completa para os defensores e amantes de animais de estimação, de fazenda ou mesmo os selvagens.</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							Nossos Know How
+						</button>
+					  </h2>
+					  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">
+							<p>Seja em nosso site, que possui uma das maiores enciclopédias virtuais do assunto, nosso canal no youtube com vídeos exclusivos, nossas redes sociais abastecidas diariamente, em nosso programa na tv, no nosso aplicativo ou em nossos eventos e ações promovidas sempre para ser um mecanismo educativo lúdico e que ao final do processo seja preservada a saúde e proteção de todo meio ambiente.</p></div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							Nosso Diferencial
+						</button>
+					  </h2>
+					  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body">Nossos produtos são feitos por profissionais de diversas áreas como veterinários, protetores, jornalistas, publicitários, administradores e tantos outros, mas o principal é que nossa matéria prima é feita por algo que não é palpável mas que é enorme e, com certeza, faz a diferença no nosso resultado final: somos verdadeiramente apaixonados por animais, pela natureza e por nosso planeta.</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+							Venha nos visitar
+						  </button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						  <div class="accordion-body">Somos mais do que um programa de tv dedicado aos cuidados, às curiosidades e principalmente ao amor pelos animais.</div>
+						</div>
+					</div>
+				  </div>
+			</article>
+		</section>
+
+		<div id="serviços">
+			<h1>Nossos Serviços</h1>
+		</div>
+
+			<section id="descrição">
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_01_adoção.jpg"/>
+					<figcaption>
+						<h3>Adoção de Animais</h3>
+						<p>Uma nova maneira de ver o mundo.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_02_banho.jpg"/>
+					<figcaption>
+						<h3>Banho e Tosa</h3>
+						<p>A brincadeira não acaba no banho.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_03_veterinario.jpg"/>
+					<figcaption>
+						<h3>Veterinário</h3>
+						<p>O biscoito é garantido no final.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_04_dentista.jpg"/>
+					<figcaption>
+						<h3>Dentista</h3>
+						<p>Dentes fortes e mordida saudável.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_05_famosos.jpg"/>
+					<figcaption>
+						<h3>Estrela de Hollywood</h3>
+						<p>A calçada da fama.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_06_achados_perdidos.jpg"/>
+					<figcaption>
+						<h3>Resgate de Animais</h3>
+						<p>Aqui o seu animal perdido é encontrado.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_07_hotel.jpg"/>
+					<figcaption>
+						<h3>Hospedagem</h3>
+						<p>Hotel 5 estrelas, enquanto o papai vai de classe econômica.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+				<figure class="foto-legenda">
+					<img src="./_imagens/Serviço_08_pets_exoticos.jpg"/>
+					<figcaption>
+						<h3>Animais Exoticos</h3>
+						<p>Todos os tipos de animais disponíveis.</p>
+					</figcaption>
+					<button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                        Seguir
+                    </button>
+				</figure>
+            </section>
+
+		<footer id="rodape">
+			<p><img id="icone" src="./_imagens/pet_superior.png" /></p>
+			<p>Copyright &copy; 2021 - by PetFriends <br />
+				<a href="#" target="_blank">Facebook</a> |
+				<a href="#" target="_blank">Twitter</a>
+			</p>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
