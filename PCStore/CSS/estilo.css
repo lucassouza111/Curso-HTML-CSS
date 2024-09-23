@@ -43,4 +43,32 @@ main{
 }
 .produto article{
     border: solid 4px #1e75f9;
+    width: 124px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.produto article .cart{
+    width: 100%;
+    background-color: #1e75f9;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.produto article .cart2{
+    width: 100%;
+    background-color: #94C954;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.cart svg{
+    margin-right: 10px;
+}
+.produto{
+    display: flex;
+    justify-content: space-evenly;
 }
